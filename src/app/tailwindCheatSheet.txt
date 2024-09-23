@@ -1,0 +1,52 @@
+tailwind cheat sheet:
+
+***************** Backgroud
+
+> bg-[color] = set background color.
+               eg: bg-red-500
+
+> bg-[size] =  Sets the background size using keywords like cover, contain, or specific values.
+               For example, bg-cover scales the background image to cover the entire element, maintaining the image's aspect ratio.
+               bg-contain scales the image to fit within the element, also preserving the aspect ratio.   
+
+> bg-[position]: Specifies the background position using keywords like center, top, bottom, left, right, and their combinations
+                 (e.g., top-left).
+                For example, bg-center positions the background image in the center of the element.
+                
+
+********* Spacing
+
+
+Tailwind CSS uses a spacing scale based on a base unit of 0.25rem (4 pixels).
+Here are some important spacing classes:
+
+> p-[size]: Sets the padding for all sides of an element using the spacing scale or specific values.
+            For example, p-4 applies 1rem (16px) padding to all sides, while p-px applies 1-pixel padding.
+
+> m-[size]: Sets the margin for all sides of an element using the spacing scale or specific values.
+           For example, m-4 applies 1rem (16px) margin to all sides, while m-px applies 1-pixel margin.
+
+> [direction]-[size]: Applies padding or margin to a specific side using the spacing scale or specific values.
+                      The direction can be top (t), right (r), bottom (b), or left (l).
+                      For example, mt-4 applies 1rem (16px) margin to the top, while pr-4 applies 1rem (16px) padding to the right side.
+
+
+********** sizing
+Tailwind CSS provides utility classes to control the width and height of elements.
+Some essential sizing classes are
+
+> w-[size]: Sets the width of an element using the spacing scale, fractions (e.g., 1/2, 1/3), or specific values (e.g., full, screen).
+            For example, w-1/2 sets the width to 50% of the parent element, while w-full sets the width to 100%.
+
+> h-[size]: Sets the height of an element using the spacing scale, fractions, or specific values. 
+            For example, h-1/2 sets the height to 50% of the parent element, while h-screen sets the height equal to the viewport height.
+
+> min-w-[size] / max-w-[size]: Sets the minimum or maximum width of an element using the spacing scale or specific values.
+                               For example, min-w-0 sets the minimum width to 0, while max-w-3xl sets the maximum width to a pre-defined breakpoint.
+
+> min-h-[size] / max-h-[size]: Sets the minimum or maximum height of an element using the spacing scale or specific values.
+                               For example, min-h-0 sets the minimum height to 0, while max-h-full sets the maximum height to 100% of the parent element.
+
+
+*************** Flexbox
+
