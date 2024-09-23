@@ -44,20 +44,21 @@ function FileUpload() {
         }
     }
 
-    
+    //grab input
     const inputChange=(e:ChangeEvent<HTMLInputElement>)=>{
         setFilename(e.target.value);
     }
 
     const handlDownload=async ()=>{
-        if(!fileName){
+        if(!fileName){                  //if no input
             alert("Please enter the name of file!")
             return;
         }
-        const response = await fetch(`/api/download?fileName=${fileName}`);
+        const response = await fetch(`/api/download?fileName=${fileName}`);   //send GET req to download endpoint with filename as query
 
-        if(response.ok){
+        if(response.ok){                            //if all good open the empty page in new tab
             const {url} = await response.json();
+            // console.log(url);
             window.open(url,'_blank');
         }else{
             alert("failed");
